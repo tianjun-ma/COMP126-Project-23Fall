@@ -1,0 +1,29 @@
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    background-color: transparent;
+    height: 100%;
+  position: relative; /* Make sure the position is set to relative */
+  overflow: hidden;   /* This will hide any parts of the image that overflow the container */
+}
+
+.card-img {
+    width: 100%;
+    /* Make the image fill the width of its container */
+    height: 100%;
+    /* Make the image fill the height of its container */
+    object-fit: cover;
+    /* This will cover the area of the container without stretching the image */
+}
+
+
+
+
+
+
