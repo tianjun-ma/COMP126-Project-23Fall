@@ -22,8 +22,17 @@
     /* This will cover the area of the container without stretching the image */
 }
 
+.col-custom {
+    max-height: auto;
+}
+footer{
+    margin-top: -50px;
+}
 
 
 
-
-
+@media (max-width: 768px) {
+   .col-custom {
+    height: 30vh;
+}
+}
