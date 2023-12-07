@@ -1,9 +1,10 @@
 
 .card-body {
     position: absolute;
-    bottom: 0;
     text-align: center;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -11,6 +12,8 @@
     height: 100%;
   position: relative; /* Make sure the position is set to relative */
   overflow: hidden;   /* This will hide any parts of the image that overflow the container */
+  border:none;
+  
 }
 
 .card-img {
@@ -20,8 +23,15 @@
     /* Make the image fill the height of its container */
     object-fit: cover;
     /* This will cover the area of the container without stretching the image */
+    
 }
 
+.card-title {
+
+    font-size: 24px; /* Adjust the font size as needed */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+}
 .col-custom {
     max-height: auto;
 }
@@ -34,5 +44,38 @@ footer{
 @media (max-width: 768px) {
    .col-custom {
     height: 30vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
 }
+
+/* hover effect */
+.card-hover {
+    position: relative; /* Add this */
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+    overflow: hidden; /* Add this to hide the image overflow */
 }
+
+.card-hover .card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+
+
+/* hover effect end */
