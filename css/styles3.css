@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Newsreader:wght@500&family=Notable&display=swap");
+
+
+body {
+    font-family: "Aleo", sans-serif;
+
+}
+
+/* Header styles */
+h1 {
+    font-family: "Aleo", sans-serif;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-family: "Aleo", sans-serif;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-family: "Aleo", sans-serif;
+    font-weight: bold;
+
+}
+
+/* Footer text */
+footer {
+    font-family: "Newsreader", serif;
+    font-weight: medium;
+
+}
+
+/* Navigation items */
+.nav-item {
+    font-weight: regular;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 8%;
+    grid-template-areas:
+    "main"
+    "footer"
+}
+
+header {
+    grid-area: header;
+    background: #EC8F5E;
+}
+
+.thanks {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(#EEEEEE, #F1EB90, #F3B664) ;
+}
+
+
+.bg-color{
+    background-color: #EC8F5E !important;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #9FBB73;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.contact {
+    align-items: center;
+    font-family: Newsreader;
+}
+
+

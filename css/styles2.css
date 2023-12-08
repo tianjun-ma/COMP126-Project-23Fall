@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Newsreader:wght@500&family=Notable&display=swap");
+
+
+body {
+    font-family: "Aleo", sans-serif;
+
+}
+
+/* Header styles */
+h1 {
+    font-family: "Aleo", sans-serif;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-family: "Aleo", sans-serif;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-family: "Aleo", sans-serif;
+    font-weight: bold;
+
+}
+
+/* Footer text */
+footer {
+    font-family: "Newsreader", serif;
+    font-weight: medium;
+
+}
+
+/* Navigation items */
+.nav-item {
+    font-weight: regular;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% auto 60% auto 8%;
+    grid-template-areas:
+    "header"
+    "instruction"
+    "form"
+    "encouragement"
+    "footer"
+}
+
+header {
+    grid-area: header;
+    background: #EC8F5E;
+}
+
+.description {
+    grid-area: instruction;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+    background: white;
+    /*grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+    "title"
+    "text"  */  
+}
+
+.bg-color{
+    background-color: #EC8F5E !important;
+}
+
+.head1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+    margin-top:-10px;
+    
+}
+
+.p1 {
+    margin-left:5%;
+    margin-right:4%;
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.donation_form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background: white;
+   
+}
+
+
+
+form {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    border-radius: 1px;
+
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+input {
+    border: 1px solid black; 
+    width: 90vw;
+    height: 70%;
+    font-size: larger;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    outline: none; 
+    box-shadow: 0 0 10px #EC8F5E; 
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+button {
+    border-radius: 8px;
+    color:white;
+    width: 25%;
+    height: 10%;
+    background-color:#EC8F5E; 
+    border:none;   
+    
+   
+}
+
+button:hover {
+    background-color: white;
+    color:#EC8F5E;
+    
+    
+}
+
+
+.encouragement {
+    grid-area: encouragement;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    padding-top: -2%;
+    margin-top: -1%;
+}
+
+.background {
+    background: linear-gradient(#EEEEEE, #F1EB90, #F3B664) ;
+    border-radius: 5px;
+    width: 90%;
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #9FBB73;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.contact {
+    align-items: center;
+    font-family: Newsreader;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    main {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 8% auto 70% 8%;
+        grid-template-areas:
+        "header header"
+        "instruction encouragement"
+        "form encouragement"
+        "footer footer"
+    }
+
+    header {
+        grid-area: header;
+        background: #EC8F5E;
+    }
+
+    .description {
+        grid-area: instruction;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .head1 {
+        display: flex;
+        justify-content: flex-start;
+        
+        
+    }
+    
+    
+    .donation_form {
+        grid-area: form;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        background: white;
+        padding-left: 10%;
+       
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: flex-start;
+        border-radius: 1px;
+        padding-left: 10%;
+        border: 1px dashed #EC8F5E;
+    }
+
+    legend {
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    
+    input {
+        border: 1px solid black; 
+        width: 125%;
+        height: 80%;
+        font-size: larger;
+        border-radius: 5px;
+    }
+    
+    input[type=text]:focus {
+        outline: none; 
+        box-shadow: 0 0 10px #EC8F5E; 
+    }
+    
+    label {
+        
+        font-size: normal;
+    }
+
+    
+    
+    button {
+        border-radius: 8px;
+        color:white;
+        width: 35%;
+        height: 8%;
+        background-color:#EC8F5E; 
+        border:none;   
+        margin-top:3%;
+        font-size: large;
+       
+    }
+
+    .encouragement {
+        grid-area: encouragement;
+        width: 90%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5%;
+       
+        
+        
+    }
+    
+    .background {
+        background: linear-gradient(#EEEEEE, #F1EB90, #F3B664) ;
+        border-radius: 8px;
+        width: 100%;
+        height:90%;
+        padding-bottom: -20%;
+        margin-bottom: 10%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
