@@ -4,38 +4,33 @@
 /* Base body styling */
 body {
     font-family: "Aleo", sans-serif;
-    font-size: 20px;
-    /* Default to 20pt for body text */
+
 }
 
 /* Header styles */
 h1 {
     font-family: "Aleo", sans-serif;
     font-weight: bold;
-    font-size: 50pt;
-    /* 50pt for Header 1 */
+
 }
 
 h2 {
     font-family: "Aleo", sans-serif;
     font-weight: bold;
-    font-size: 40pt;
-    /* 40pt for Header 2 */
+
 }
 
 h3 {
     font-family: "Aleo", sans-serif;
     font-weight: bold;
-    font-size: 28pt;
-    /* 28pt for Header 3 */
+
 }
 
 /* Footer text */
 footer {
     font-family: "Newsreader", serif;
     font-weight: medium;
-    font-size: 20pt;
-    /* 20pt for Footer text */
+
 }
 
 /* Navigation items */

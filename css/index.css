@@ -1,4 +1,6 @@
-
+.intro-box h1{
+    font-size: 50pt;
+}
 .card-body {
     position: absolute;
     text-align: center;
@@ -12,8 +14,8 @@
     height: 100%;
   position: relative; /* Make sure the position is set to relative */
   overflow: hidden;   /* This will hide any parts of the image that overflow the container */
-  border:none;
-  
+    border:none;
+
 }
 
 .card-img {
@@ -42,10 +44,16 @@ footer{
 
 
 @media (max-width: 768px) {
-   .col-custom {
+.col-custom {
     height: 30vh;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    }
+    .intro-box h1{
+    font-size: 30pt;
+    }
+    .intro-box h3{
+    font-size: 15pt;
     }
 }
 
