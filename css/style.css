@@ -42,3 +42,7 @@ footer {
 .nav-item {
     font-weight: regular;
 }
+/*make navbar and footer orange*/
+.bg-color{
+    background-color: #ec8f5e;
+}
