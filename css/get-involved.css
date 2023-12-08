@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+main {
+    flex: 1;
+    padding: 0;
+}
+
+.volunteer-opportunities h2, 
+.volunteer-spotlight h3 {
+    font-family: 'Aleo', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+.current-openings h3 {
+    font-family: 'Aleo', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.volunteer-spotlight .spotlight-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.spotlight-image img {
+    max-width: 100%;
+    height: 90%;
+}
+
+.volunteer-opportunities, .volunteer-spotlight, .current-openings {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.volunteer-spotlight, .current-openings{
+    margin-top: 15px;
+}
+
+.volunteer-opportunities .text-box{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    border: 1px dashed;
+}
+
+.volunteer-opportunities .text-box h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9FBB73;
+}
+
+.current-openings .openings-grid ol {
+    list-style-position: inside;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.openings-grid li{
+    padding: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: center;
+}
+
+.openings-grid-li-text{
+    background-color: #9FBB73;
+}
+
+
+.sign-up-button {
+    background: #EC8F5E;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Aleo', sans-serif;
+    padding: 10px 40px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+.sign-up-button:hover {
+    background:#9FBB73;
+}
+
+
+@media (min-width: 768px) {
+    
+    .volunteer-spotlight .spotlight-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .sign-up-button {
+        padding: 15px 60px;
+        font-size: larger;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        border-radius: 20px;
+    }
+    
+}
+
