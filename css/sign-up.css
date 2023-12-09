@@ -1,6 +1,4 @@
-
 body {
-    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -11,6 +9,10 @@ main {
     padding: 0;
 }
 
+body h2{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
 .signup-form {
     display: grid;
@@ -50,9 +52,9 @@ main {
 }
 
 
-.submit-button {
+.button-secondary {
     display: block;
-    background-color: #F3B664;
+    background-color: #ffc77d;
     color: #000000;
     text-align: center;
     text-decoration: none;
@@ -60,25 +62,16 @@ main {
     font-family: 'Aleo', sans-serif;
     padding: 10px 40px;
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     border-radius: 20px;
     max-width: fit-content;
     justify-self: center;
 }
 
-.submit-button:hover {
-    background:#9FBB73;
+.button-secondary:hover {
+    background:#9fbb73;
 }
 
-footer {
-    position: fixed; 
-    left: 0;
-    right: 0;
-    bottom: 0; 
-    background-color: #9FBB73;
-    padding: 10px;
-    text-align: center;
-}
 
 @media (min-width: 768px) {
     .header {
@@ -117,7 +110,7 @@ footer {
 
     input[type="text"]:focus,
     input[type="email"]:focus {
-        border: 1px solid #67595E;
+        border: 1px solid #F3B664;
         outline: none;
     }
 
@@ -167,15 +160,7 @@ footer {
     .form-group-message {
         grid-row: span 4;
     }
-
-    footer {
-        position: fixed; 
-        left: 0;
-        right: 0;
-        bottom: 0; 
-        background-color:#9FBB73;
-        padding: 10px;
-        text-align: center;
-    }
 }
+
+
 

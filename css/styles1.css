@@ -44,16 +44,16 @@ main {
     padding: 0;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:auto auto 8%;
+    grid-template-rows: auto auto 8%;
     grid-template-areas:
-    "image"
-    "form"
-    "footer"
+        "image"
+        "form"
+        "footer"
 }
 
 nav {
     grid-area: header;
-    height:100%;  
+    height: 100%;
 }
 
 
@@ -62,13 +62,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width:100%;
+    width: 100%;
     background: white;
     /*grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
     grid-template-areas:
     "title"
-    "text"  */  
+    "text"  */
 }
 
 
@@ -77,9 +77,9 @@ nav {
     display: flex;
     justify-content: center;
     padding: 1%;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    
+
 }
 
 .donate_text {
@@ -87,12 +87,12 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    width:100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:1%;
+    padding: 1%;
     row-gap: 1%;
 
 }
@@ -107,7 +107,7 @@ nav {
     align-content: center;
     align-items: center;
     background: white;
-   
+
 }
 
 
@@ -129,13 +129,13 @@ form {
 legend {
     font-size: large;
     font-weight: bold;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 
 input {
-    border: 1px solid black; 
+    border: 1px solid black;
     width: 100%;
     height: 70%;
     font-size: larger;
@@ -143,35 +143,35 @@ input {
 }
 
 input[type=text]:focus {
-    outline: none; 
-    box-shadow: 0 0 10px #EC8F5E; 
+    outline: none;
+    box-shadow: 0 0 10px #EC8F5E;
 }
 
 
 button {
-    border-radius: 8px;
-    color:white;
+    background: #f07818;
+    color: #fef9f3;
     width: 25%;
     height: 15%;
-    background-color:#EC8F5E; 
-    border:none;   
-    margin-top:3%;
-   
+    border: none;
+    margin-top: 3%;
+    border-radius: 20px;
+
 }
 
+
 button:hover {
-    background-color: white;
-    color:#EC8F5E;
-    
-    
+    background: #ffc77d;
+    color: #424242;
+
 }
 
 footer {
     grid-area: footer;
     background-color: #9FBB73;
-    width:100%;
+    width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -192,11 +192,11 @@ footer {
         grid-template-columns: 60% 40%;
         grid-template-rows: auto 8%;
         grid-template-areas:
-        "image form"
-        "footer footer"
+            "image form"
+            "footer footer"
     }
 
-    
+
     .image {
         grid-area: image;
         width: 90%;
@@ -211,22 +211,22 @@ footer {
     .head1 {
         display: flex;
         justify-content: flex-start;
-        
+
     }
-    
+
     .donate_text {
         background-image: url("../image/3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-color: black;
-        width:95%;
+        width: 95%;
         height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding:3%;
+        padding: 3%;
     }
-    
+
     .donation_form {
         grid-area: form;
         width: 90%;
@@ -237,7 +237,7 @@ footer {
         align-content: center;
         align-items: center;
         background: white;
-       
+
     }
 
     form {
@@ -253,43 +253,50 @@ footer {
         border-radius: 0px;
         padding-bottom: -10%;
         margin-bottom: -13%;
-    
+
     }
 
     legend {
         font-size: larger;
         font-weight: bold;
     }
-    
-    
+
+
     input {
-        border: 1px solid black; 
+        border: 1px solid black;
         width: 90%;
         height: 80%;
-        font-size: larger;       
+        font-size: larger;
         border-radius: 5px;
     }
-    
+
     input[type=text]:focus {
-        outline: none; 
-        box-shadow: 0 0 10px #EC8F5E; 
+        outline: none;
+        box-shadow: 0 0 10px #EC8F5E;
     }
-    
+
     label {
         margin-bottom: 15px;
         font-size: normal;
     }
-    
+
     button {
-        border-radius: 8px;
-        color:white;
+        background: #f07818;
+        color: #fef9f3;
         width: 30%;
-        height: 10%;
-        background-color:#EC8F5E; 
-        border:none;   
-        margin-top:3%;
-        font-size: large;
-       
+        height: 15%;
+        border: none;
+        margin-top: 3%;
+        border-radius: 20px;
+
+    }
+
+
+    button:hover {
+        background: #ffc77d;
+        color: #424242;
+
+
     }
 
 }

@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -70,7 +69,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9FBB73;
+    background-color:#f4a460;
 }
 
 .current-openings .openings-grid ol {
@@ -89,13 +88,14 @@ main {
 }
 
 .openings-grid-li-text{
-    background-color: #9FBB73;
+    background-color: #f4a460;
+    color: #424242;
 }
 
 
-.sign-up-button {
-    background: #EC8F5E;
-    color: #000000;
+.button-primary {
+    background: #f07818;
+    color: #fef9f3;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -106,8 +106,9 @@ main {
     border-radius: 20px;
 }
 
-.sign-up-button:hover {
-    background:#9FBB73;
+.button-primary:hover {
+    background:#ffc77d;
+    color: #424242;
 }
 
 
@@ -118,7 +119,12 @@ main {
         grid-template-columns: 2fr 1fr;
     }
 
-    .sign-up-button {
+    .spotlight-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .button-primary {
         padding: 15px 60px;
         font-size: larger;
         margin-top: 50px;

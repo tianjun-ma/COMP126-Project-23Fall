@@ -8,65 +8,17 @@
 
 body {
     font-family: 'Aleo', sans-serif;
-    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center; 
     
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #EC8F5E, #F3B664);
-    padding: 10px;
-}
-.bg-color{
-    background-color: #EC8F5E !important;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-width: 90px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.header h1 {
-    margin: 0;
-}
-
-.header-right button {
-    background: none;
-    border: none;
-    display: flex;
-    align-items: center;
-}
-
-#menu-icon img {
-    cursor: pointer;
-    width: 50px;
-}
-
-.navigation {
-    display: none; 
-    flex-direction: column;
-}
-
-.navigation.show {
-    display: flex;
-}
 
 main {
     flex: 1;
     padding: 0;
 }
-
 
 
 .welcome h2{
@@ -94,7 +46,7 @@ main {
     padding: 4%;
     margin-left: 10%;
     margin-right: 10%;
-    border: 1px dashed;
+    border: 3px dashed;
     border-color: #F3B664;
     margin-bottom: 5%;
     text-align: center;
@@ -127,39 +79,16 @@ p {
 
 .intro-text-box {
     padding: 10px; 
-    background-color: #f0f0f0;
+    background-color: #ffc77d;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-footer {
-     
-    background-color:#9FBB73;
-    text-align: center;
-}
 
 
 @media (min-width: 768px) {
-    .header {
-        justify-content: start;
-    }
-
-    .header-left {
-        flex: 1;
-    }
-
-    .header-right button {
-        display: none;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex: 1;
-    }
-
+    
     .team-image {
         display: grid;
         grid-template-rows: 3;
@@ -172,7 +101,7 @@ footer {
 
     .intro-text-box {
         padding: 10px; 
-        background-color: white;
+        background-color: #ffc77d;
         margin-top: 50px; 
     }
 
@@ -197,17 +126,5 @@ footer {
         max-height: auto;
     }
     
-    .intro-text-box {
-        background-color: #f0f0f0;
-        margin-top: 50px; 
-    }
 
-
-    footer {
-         
-    
-        background-color:#9FBB73;
-        
-        text-align: center;
-    }
 }

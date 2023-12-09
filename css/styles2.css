@@ -46,11 +46,11 @@ main {
     grid-template-columns: 100%;
     grid-template-rows: 8% auto 60% auto 8%;
     grid-template-areas:
-    "header"
-    "instruction"
-    "form"
-    "encouragement"
-    "footer"
+        "header"
+        "instruction"
+        "form"
+        "encouragement"
+        "footer"
 }
 
 header {
@@ -63,30 +63,30 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width:100%;
+    width: 100%;
     background: white;
     /*grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
     grid-template-areas:
     "title"
-    "text"  */  
+    "text"  */
 }
 
-.bg-color{
+.bg-color {
     background-color: #EC8F5E !important;
 }
 
 .head1 {
     display: flex;
     justify-content: center;
-    margin-bottom:15px;
-    margin-top:-10px;
-    
+    margin-bottom: 15px;
+    margin-top: -10px;
+
 }
 
 .p1 {
-    margin-left:5%;
-    margin-right:4%;
+    margin-left: 5%;
+    margin-right: 4%;
     margin-top: -1%;
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@ header {
     align-content: center;
     align-items: center;
     background: white;
-   
+
 }
 
 
@@ -128,7 +128,7 @@ legend {
 
 
 input {
-    border: 1px solid black; 
+    border: 1px solid black;
     width: 90vw;
     height: 70%;
     font-size: larger;
@@ -137,8 +137,8 @@ input {
 }
 
 input[type=text]:focus {
-    outline: none; 
-    box-shadow: 0 0 10px #EC8F5E; 
+    outline: none;
+    box-shadow: 0 0 10px #EC8F5E;
 }
 
 label {
@@ -146,21 +146,20 @@ label {
 }
 
 button {
-    border-radius: 8px;
-    color:white;
+    background-color: #ffc77d;
+    color: #000000;
+    border-radius: 20px;
     width: 25%;
     height: 10%;
-    background-color:#EC8F5E; 
-    border:none;   
-    
-   
+    border: none;
+
+
 }
 
 button:hover {
-    background-color: white;
-    color:#EC8F5E;
-    
-    
+    background: #9fbb73;
+
+
 }
 
 
@@ -178,10 +177,10 @@ button:hover {
 }
 
 .background {
-    background: linear-gradient(#EEEEEE, #F1EB90, #F3B664) ;
+    background: linear-gradient(#EEEEEE, #F1EB90, #F3B664);
     border-radius: 5px;
     width: 90%;
-    padding:5%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,15 +191,15 @@ button:hover {
 .head2 {
     display: flex;
     justify-content: center;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 footer {
     grid-area: footer;
     background-color: #9FBB73;
-    width:100%;
+    width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -221,10 +220,10 @@ footer {
         grid-template-columns: 55% 45%;
         grid-template-rows: 8% auto 70% 8%;
         grid-template-areas:
-        "header header"
-        "instruction encouragement"
-        "form encouragement"
-        "footer footer"
+            "header header"
+            "instruction encouragement"
+            "form encouragement"
+            "footer footer"
     }
 
     header {
@@ -246,11 +245,11 @@ footer {
     .head1 {
         display: flex;
         justify-content: flex-start;
-        
-        
+
+
     }
-    
-    
+
+
     .donation_form {
         grid-area: form;
         width: 90%;
@@ -262,7 +261,7 @@ footer {
         align-items: center;
         background: white;
         padding-left: 10%;
-       
+
     }
 
     form {
@@ -282,38 +281,38 @@ footer {
         font-size: larger;
         font-weight: bold;
     }
-    
-    
+
+
     input {
-        border: 1px solid black; 
+        border: 1px solid black;
         width: 125%;
         height: 80%;
         font-size: larger;
         border-radius: 5px;
     }
-    
+
     input[type=text]:focus {
-        outline: none; 
-        box-shadow: 0 0 10px #EC8F5E; 
+        outline: none;
+        box-shadow: 0 0 10px #EC8F5E;
     }
-    
+
     label {
-        
+
         font-size: normal;
     }
 
-    
-    
+
+
     button {
-        border-radius: 8px;
-        color:white;
+        border-radius: 20px;
         width: 35%;
         height: 8%;
-        background-color:#EC8F5E; 
-        border:none;   
-        margin-top:3%;
+        background-color: #ffc77d;
+        color: #000000;
+        border: none;
+        margin-top: 3%;
         font-size: large;
-       
+
     }
 
     .encouragement {
@@ -324,23 +323,23 @@ footer {
         flex-direction: column;
         justify-content: center;
         padding-top: 5%;
-       
-        
-        
+
+
+
     }
-    
+
     .background {
-        background: linear-gradient(#EEEEEE, #F1EB90, #F3B664) ;
+        background: linear-gradient(#EEEEEE, #F1EB90, #F3B664);
         border-radius: 8px;
         width: 100%;
-        height:90%;
+        height: 90%;
         padding-bottom: -20%;
         margin-bottom: 10%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
 
 }
