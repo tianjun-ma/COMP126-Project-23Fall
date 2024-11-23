@@ -9,8 +9,8 @@ This is a collaborative project completed as part of a team of three. Each team 
 ## Contributors
 
 - [Xinglin Hu](https://github.com/XinglinHu)
-- [Tianjun Ma](https://github.com/InsertGithubLinkHere)
-- [Shuyan Wu](https://github.com/InsertGithubLinkHere)
+- [Tianjun Ma](https://github.com/tianjun-ma)
+- [Shuyan Wu]
 
 ## Additional Notes
 
