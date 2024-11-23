@@ -10,7 +10,7 @@ This is a collaborative project completed as part of a team of three. Each team 
 
 - [Xinglin Hu](https://github.com/XinglinHu)
 - [Tianjun Ma](https://github.com/tianjun-ma)
-- [Shuyan Wu]
+- Shuyan Wu
 
 ## Additional Notes
 
